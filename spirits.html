@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alcStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spirits Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span>
+                    <a href="alcWebsite.html">Alcohol Delivery</a>
+                </span>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search products...">
+                <button>Search</button>
+            </div>
+            <div class="loginCart">
+                <table>
+                    <tr>
+                        <td><button id="login"><a href="login.html">Login</a></button></td>
+                        <td><button id="shoppingCart" style="font-size:24px"><a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="beer.html">Beer</a></li>
+                <li><a href="wine.html">Wine</a></li>
+                <li><a href="spirits.html">Spirits</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="alcTypePageDiv">
+        <h1>Spirits</h1>
+    </div>
+
+    <div class="container">
+        <!-- Whiskey Section -->
+        <section>
+            <h2 id="whiskey">Whiskey</h2>
+            <div class="category">
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="https://cwspirits.com/cdn/shop/files/jack-daniel-s-whiskey-750-ml-country-wine-and-spirits.png?v=1718355493" alt="Jack Daniels">
+                    </div>
+                    <h3>Jack Daniel's Whiskey</h3>
+                    <p class="price">$16.99/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_whiskey1">Quantity:</label>
+                        <input type="number" id="quantity_whiskey1" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTralyh8TMp4-t76uZL6MDvlYnXzrcF6lHzBQ&s" alt="Crown Royal">
+                    </div>
+                    <h3>Crown Royal Canadian Whiskey</h3>
+                    <p class="price">$14.99/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_whiskey2">Quantity:</label>
+                        <input type="number" id="quantity_whiskey2" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vodka Section -->
+        <section>
+            <h2 id="vodka">Vodka</h2>
+            <div class="category">
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUQEhISEBIVFxcUExYSExIaFhUWGBsWFhYVFRUYHikgGBolGxcVIzEjJSkrMC4uFx8zODMtNyg5LisBCgoKDg0OFxAQGi0lICUwLTcyLS8rKy0uMTcwKy0vLS0vLy8rNy4tLS8tLS0tLS0uListLS8tLS0tLS8rKy0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAwADAQAAAAAAAAAAAAAAAwQFAQIGB//EAD8QAAIBAgMFBQUGAwcFAAAAAAABAgMRBBIhBTFBUXEGEyJhsRQygZHBIzNCctHwFaHxFjRSYmOS0gdTc7Lh/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EADYRAQABAwICBggFBAMAAAAAAAABAgMRBCESMQVBUXGRoRMyM2GBwdHSFBWx4fAiQkOiU3KS/9oADAMBAAIRAxEAPwD7iAAAAAAAAAAAAACrtSN6NRZpRvCSvBtSWm+Mlqn5lLk4pmYTEZnDyWO2NRqNOpGU3a3iqVX8/FqeXxVdstY09vs85T4fY9GMcsYyiuGWpVVujUinFParOnt55ect3s7TcaOXNOdpSs6k5Tla97ZpatLzPUsTM0RlWqmKZxDTNlQAAAAAAAAAAAAAAAAAAAAAAAAAAAGd2ixXdYWtV08FOUtd2i4+RS5GaZhan1ofPtq9saKlHJUjbi3FP5NSPN4Hq0aHUzHs58GpS7Y4PInnd2t9p6/OKRXgRPR+qz6k+D0HYraCr4d1U7p1KiTW5pOx6ViMUQ869TNNcxVGJbxqyAAAAAAAAAAAAAAAAAAAAAAAAAAAAZnaeClhMQpOcYulO7grytZ3yqzu/KxWr1Za2PaU98Pl20qFLNThGE5TtCVstKMcjnCLT3WlZ2S4to8+umnbD6+36TFVVVW28c6p3xM+/brn3c3NOdOUUskk8sKjUlBrI4vVaaJycdPes+bERTjk0mi5EzPF2xtM84n9cZ93wfQOwNKEcIowc3HPUsqkVFxeZ5kopJJXv8zts44Iw+V6RmZ1FU1c/dOfPL0Zq4QAAAAAAAAAAAAAAAAAAAAAAAAAAAGd2i/utfWa+ynrTV5rwv3VZ3ZWr1Za2Pa098PmO0lBVIKCrOrli2+8UU6bqQTg3mXid7LW+a1jhqxnbm+vtTVNEzVw8O/VnfhnflO3b7uatQVJRVoVIScKcpZp3XdONl+L3c3d2W/dbUrGMOiqbszvVExmYjEf3Z7ueM78u3Z9K7EtPCxt3j8dRfaq0r5ndPTnc7rXqw+P1/t6uXw5fBvGjjAAAAAAAAAAAAAAAAAAAAAAAAAAAAY/bGq44HEyi8slRqNN88rtx068Ctfqy200RN2iJ7YfNcdOlnhPPXvls5Ur7m1dXUnyb+CZwTjPW+po9NwzTMRjPXj5xDmEKUYScNJZXFXVVJpJKKk7LSyStfSyKxjHW147s1UxVOYzn+3445vd/wDTurmwUXn7x55p7/C76xTbeZJ31O6zOaIfNdJRjU1xH0+UPTGrgAAAAAAAAAAAAAAAAAAAAAAAAAAAAV8fRz05wd1mi1pv3AYG1Oz7qZZQk00tVnmlLTrz6cSMDtgtgSSeebW9K1So9Lu2l+QwNrZeGVOGVNvxS1bfPz+BItgAAAAAAAAAAAAAAAAAAAAAAAAAAAAdK78L6MCNu1r2+YQkitAOKO59X6hKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAClisWtYR1e5tbl8QiVJxlxcn6+pKu7vTxbXgzNPgpJp/C7VwndNQxihpPRN6O2mvPkQQ0QsAAAAAAAAAAAAAAAAAAAAAAAAAABn4rEuTcIaJaSl6pfqBFTpWJVdsnOz8tf1A7KjeysviuPMJKuEbWqTAgwtWdF5Jpuk/df+Hy6ehA2EwkAAAAAAAAAAAAAAAAAAAAAAAAIcbVyU5zX4YyfyVwItmUlGCAmrR3acSYRLo6KCEtKKW5WITDuEocVTUoNPkBBsipmpLyco/wC2Tiv5IC6AAAAAAAAAAAAAAAAAAAAAAAAQY6GanOPOMl/JgebwHalOm3HDYqag2pShCnlvHfbNJNr4GE6i3vmeT0PwGKaZru0RmIneZ6+6kj2uU2lHCYxvevBRXrMynX2Izv5Sv+WRMe2o/wBvtXNn7flW93CYpJXV5dwlp5Z7nRTeicY64yzu6Cm3zvUT3cX2mM27Om9cJimuce4a/wDe5lVrLVM4qnyn6JtaCm5yvUf7faq1e16ik5YXGK6uvBRenwmRTrbFWcVeU/Rb8vp4pp9NRmP+32u39qW4SksJjctvedOjZaclO/8AImdXbiOLqRHR8TOKb1Ez31fa1tgO9CEtVmzTs96zSbsdETmMw8+qmaZmmepokoAAAAAAAAAAAAAAAAAAAAAAAEWJ9yX5X6AfHuxtFVsXXjPNUUFWnCiqkoqpKMklHfa2voctFETnbtfX6y/Va6PszRERMxTHFjlt3J8XPCPEQhicJicHJpRUITdpSlJJSTbtlS5c/IzqimnO3h+5Yq1sWaqrNyi5Eb5mN425dvi247GwlLE+x0Y13iHFSzTqN04xd25NJptpJ6cXZXV7m/BETwuGrpDW3bE36uHgiccozns80GMw2zqlf2TPiI1m8iq5nkzrTLbdv03W8ys4icfRvY1HSFNn08U0zRG+MRnH6+bM2jsPusJiJzlJ1qNaNJNSeVxfdtO3mp3+JERG845Oqz0l6XV2qaIjgqjPLfO/0YVaDjs6OKVSqqjxLov7SWXIoOW6++5nXRE05d1Won8dNnhp4eHPLfOX2Xsm74Og/wDTidlHqw+F1Hta++f1axZiAAAAAAAAAAAAAAAAAAAAAAAI8R7kvyv0A+FbHeHjia/tNWrRWar3c6N80J59Jaa7rr4nLTvE9/zfd3LOonQ2vQ0xVtTmJ5TGPe0e1HaCjVlhKdOpUrRw8k516qeeWsb6Wu7JcuW8rdiZpx7pZdF9G6i3F+5XTFPFExFOf3aT7Q06m0/aqDzwVOMXdOLfvKSs+qZrNf8AVFUOajo27R0fVZvRiZqzHX1RhYxmJ2ZTxHtcqlZ1U86oqLtnve97W36+9YjGZ2yztWekqtP+Hpojhnbi93j8sq/8ew1fD4iGKqToutWVX7ODlljFU1FXtb8CQiJjOesno3Vaa/arsUcXDT29eZz1xPW87tzG4ZYT2PD1J1UsS6ylUi4vK6Si76LXO5K3JfPKuqMY/nJ6Wl0uruar09+iKf6cc/f3zPJ9h7Jf3LD/APjj6HXR6sPitRGLtffP6tcsxAAAAAAAAAAAAAAAAAAAAAAAEdf3ZdH6AeU2d2bl3UsuLrRjUbk4qNF2z6tRlKLaWvM5/wANROc9fe9GdfRVTTFVqmcREZzVHLumElLshJNOONxHxjRf8nEyno+zPb4z9Wn5lb/4afGv7l3Z/Z+pRvbF1pJ62lCg9euS50U2ojGOqMMrutt3P8NMd01fcYvYFSo9cZWiuUYUP+FzKrR2qpzVnxn6pta+i3/hpn41fcqV+x7kknjMRorK3dr0iVo0NmnOI85+q35hRxTV6Gnf31/c6/2dmqcoLG17JcaeHb3c3C/AmdHRNM05nCI19qmcxZp/9V/c3dh08tCnG97Rtd8bNq51RGIiHn11cVU1dq8SqAAAAAAAAAAAAAAAAAAAAAAAOlb3X0YFPZ/3Uei9EBYdXR2lG6aTu9zfB8nYjIideXOne9nZ6LS9nydxkcUa82r+Ba2V29XvYyJoVb73HW9rPfYZgQyfv/lZI7bK+6h0fqwLYAAAAAAAAAAAAAAAAAAAAAAAB0q+6+jAqYD7qPw9EEPPbU2HP2t4lNLDyjGrUSfidelGdOm7cVacHfnSiY1W5mpaGRs/YFRUpxyUYN0FSllk7V5ZovvanhWuj35n43d2FFEx1FS7/Apzg4wcMMnW7xRoyeWjHupU7w8K1ct6SW/mUrt1TyRDmpsTFTlh68I0KfsypqFOLdpXk1WcJaZU4W0ad7cN5WLde045J2zl6qX4vyv6nWh22R9zDoBcAAAAAAAAAAAAAAAAAAAAAAAAOlb3ZdH6AU9mv7GPReiA7VqLs71GoyTVnGNle/pdfIDLhUppyj38cq030762t8v6jKHWOJjeX2sNVdeKGmr0/fMZFulNtRiq7jdK1oRa4W1+f+4JWFGykrt6PV28wJdlfcw6fVgWwAAAAAAAAAAAAAAAAAAAAAAADrV3PowKGzpWoRer8KdlvdktF5gZG1sbUtpKtBSlaMXQTtZR+LTct/XkRlVT9oq2llqVbtqydCLe9LXdu04cCDKb2qWW+atnd46YeWlrN6N8b+oFeVWtmjJOu8tn4cMtUmuHDqEbvSUquaMpZZRunpNWel96LLrGy19lDoBaAAAAAAAAAAAAAAAAAAAAAAAAOtTc+gGfs1/ZQ6fRAS4rDZ1HVLLJSd1vS3r4gV5d3Sbbi5b90IgcQnFrMtVJtrfwSugJ4NrxNRhDLvenLTfoB0jVUszTTWV6rpf6gWdm/dQ6AWQAAAAAAAAAAAAAAAAAAAAAAADie5gY+ClL2dZEs6jJRvuzW0v8bET7lqOHiji5dbLVetXjKlQjUy3i+8qykmpLK2s2qav/AIdLK6umjLM1bQ9Lgt2aoquTGeyIj+eO/bvD1NJu3iab8uHka5eWo7U2hGFo5mpPWyy3a3cd2vE5r2qi3twzPlHjLSi3xb5eZ2jtGpNtXjTjvcnB1ZLS10pLKtP8rWpz16m7MZjEd2/nyM26Z658v3XtgYibjWpzzPu0rOVrtSU1rZc4+m420d30lMznO612nFNM47Xo8Cvs49EdjFOAAAAAAAAAAAAAAAAAAAAAAAAdZrR9AMrBwbpNR1d5LVKyvzT3oiYnGyYVsBsGdPWpiatRPRU4KnTpQX+WMIpvq2zCrTxXERVM/Ccfo1m/Oc437Z3nza9LDxirJaGtuzRbjFMYZVV1VTmWP2i2S6sqdWF3KmpRcFbxRlld430zJxTXNNrkc+t083aYmnnDexXTw1W69s4xPZMfJUUFayjNt6WyTzW1aTi43tfm7edjyPw9+duGfl48lpsVZ3mMduY/nwXsBgnTp1HLSc7tq98qSeWLfF72/OTPZ0mn9Db4Z59bO9XTOKaeUefbLYwa8EeiOlimAAAAAAAAAAAAAAAAAAAAAAAAOJbgKGzppJp6eKSXzAuVOHUmBG5624BCSL1EjtJkJUsW/e6P0AtYVeCPRASgAAAAAAAAAAAAAAAAAAAAAAABgY1DXTf45O17XA05S0S6EwIpvXcEJI/qB3kyEqONlpLo/RgXcN7q6ASgAAAAAAAAAAAAAAAAAAAAAAAHDA8zhm80kpNJNt2a5vdcDUhVbt0+qf1JhDu5a8ePqwLEX9fQCR/v5EJZ+N/F+V+nMDQw3uroBIAAAAAAAAAAAAAAAAAAAAAAAAcMDydGVpvS+/h5vXQga1H6f8CyEkppSSfnby1YFpfr6ASP9/IgZ2M3T5ZX6BLRw3uR6ICUAAAAAAAAAAAAAAAAAAAAAAAA4k7K4HksBCc5Smksq01a466aNWswNOVRQXjlCN915RV72tbXyJyhL38FvnDjrmXF6X+YFinWT3Si9+6S5ATyfT5+X6kDF2liLd414pJbo3ulzvbQJbGzqilShJcYr0AsgAAAAAAAAAAAAAAAAAAAAAAAEGN+7n+WXoBhbOxVOlDJqlv8ed2vpo3f5DCHevjaclFLEQjZ6XVN6aaarT/6MCvWw9KenfUbZk3aNNbrWTytX4fIYFzCypwzLvaXid/w+fBt8v5DAuvGQ/7kPLWP7/qEqtfLJNd5K1mrQbV0/OIFzYsFGjGKvZXSve+98wLwAAAAAAAAAAAAAAAAAAAAAAAB0rwzRcd1018wMJxcF4s0eejt87WJQqTx7zZU01wd4O/w3kCaeKkle6fSC8v0AgjtR5rWlp/pdfhu/fEC3/Fop2be7famvrf+gFn2nMnkUp9F+gGhgaLhBRe/e/jqErAAAAAAAAAAAAAAAAAAAAAAAAAA4AwdtcejIHkK/wCvqyUOIfv5Aer2Jw6AejCXIAAAAAAAAAAAAAP/2Q==" alt="Stoli Vodka">
+                    </div>
+                    <h3>Stoli Vodka</h3>
+                    <p class="price">$15.99/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_vodka1">Quantity:</label>
+                        <input type="number" id="quantity_vodka1" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tequila Section -->
+        <section>
+            <h2 id="tequila">Tequila</h2>
+            <div class="category">
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="data:image/jpeg;base64,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" alt="1800 Tequila">
+                    </div>
+                    <h3>1800 Tequila</h3>
+                    <p class="price">$18.99/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_tequila1">Quantity:</label>
+                        <input type="number" id="quantity_tequila1" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoU_ZLJ1a2XY1lVRhXawH9nJ2eFiOsJL51rg&s" alt="Patron Tequila">
+                    </div>
+                    <h3>Patron Tequila</h3>
+                    <p class="price">$23.99/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_tequila2">Quantity:</label>
+                        <input type="number" id="quantity_tequila2" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Alcohol Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="alcoholJS.js"></script>
+</body>
+
+</html>

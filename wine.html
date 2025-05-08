@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alcStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Wine Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span>
+                    <a href="alcWebsite.html">Alcohol Delivery</a>
+                </span>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search products...">
+                <button>Search</button>
+            </div>
+            <div class="loginCart">
+                <table>
+                    <tr>
+                        <td><button id="login"><a href="login.html">Login</a></button></td>
+                        <td><button id="shoppingCart" style="font-size:24px"><a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="beer.html">Beer</a></li>
+                <li><a href="wine.html">Wine</a></li>
+                <li><a href="spirits.html">Spirits</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="alcTypePageDiv">
+        <h1>Wine</h1>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2 id="red-wine">Red Wine</h2>
+            <div class="category">
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="https://i5.walmartimages.com/seo/Apothic-Red-Blend-Wine-California-750ml-Glass-Bottle-13-5-ABV_1420908f-13d1-4e19-ab6c-c08329415f97.77a3c70670c9971d677945869ab9cef9.jpeg" alt="Apothic Red">
+                    </div>
+                    <h3>Apothic Red</h3>
+                    <p class="price">$13.49/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_wine1">Quantity:</label>
+                        <input type="number" id="quantity_wine1" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <!-- Add more red wine products here -->
+            </div>
+        </section>
+
+        <section>
+            <h2 id="white-wine">White Wine</h2>
+            <div class="category">
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqjsC9_oxFLBd7x43oK9GdNNSGmgzliX-Ylw&s" alt="Barefoot White">
+                    </div>
+                    <h3>Barefoot White</h3>
+                    <p class="price">$6.99/750ml</p>
+                    <div class="qyt">
+                        <label for="quantity_wine2">Quantity:</label>
+                        <input type="number" id="quantity_wine2" value="1">
+                    </div>
+                    <div class="productbtns">
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <!-- Add more white wine products here -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Alcohol Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="alcoholJS.js"></script>
+</body>
+
+</html>

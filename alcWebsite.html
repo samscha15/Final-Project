@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Sam Schaefer">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alcStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Alcohol Delivery</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span>
+                    <a href="alcWebsite.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO53gjU7A-Ayw_vGeygtNZfQF_EPwC6m80bQ&s" alt="logo" class="logo-image">
+                        Alcohol Delivery
+                    </a>
+                </span>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search products...">
+                <button>Search</button>
+            </div>
+            <div class="loginCart">
+                <table>
+                    <tr>
+                        <td>
+                            <button id="login" class="button" onclick="window.location.href='login.html';">
+                                Login
+                            </button>
+                        </td>
+                        <td>
+                            <button id="shoppingCart" style="font-size:24px">
+                                <a href="shoppingCart.html"><i class="fa fa-shopping-cart"></i></a>
+                                <span id="cart-count" class="cart-count">0</span>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="beer.html">Beer</a></li>
+                <li><a href="wine.html">Wine</a></li>
+                <li><a href="spirits.html">Spirits</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Specials Banner -->
+    <div id="specialBanner">
+        <h1>Specials</h1>
+    </div>
+
+    <!-- Products Container -->
+    <div class="container">
+        <!-- Beer Section -->
+        <section>
+            <h2 id="beer">Beer</h2>
+            <div class="category">
+                <!-- Beer products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Wine Section -->
+        <section>
+            <h2 id="wine">Wine</h2>
+            <div class="category">
+                <!-- Wine products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Spirits Section -->
+        <section>
+            <h2 id="spirits">Spirits</h2>
+            <div class="category">
+                <!-- Spirits products will be dynamically inserted here -->
+                <div class="product">
+                    <div class="image-placeholder">
+                        <img src="data:image/jpeg;base64,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" alt="Stoli Vodka">
+                    </div>
+                    <h3>Stoli Vodka</h3>
+                    <p class="price">$15.99/750ml</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Alcohol Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="alcoholJS.js"></script>
+</body>
+</html>
